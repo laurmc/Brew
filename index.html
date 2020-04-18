@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+  <title>Brewery Search</title>
+</head>
+<body>
+    <div id="top">
+      <h1><span>Find a brewery. Enjoy a beer you'll love.</span></h1>
+    </div>
+    
+    
+    <!--
+    HOLDING as reference 
+    <img src="https://www.arcgis.com/sharing/rest/content/items/cbe2b3319349402c8ea1e11ebeff1185/resources/1578316937202.jpeg?w=3117" alt="Beer flight">
+    -->
+
+    <p>Here's how:</p>
+    <ul>
+      <li>Type in your city and state.</li>
+      <li>Check off your preferences.</li>
+      <li>Click the "Search" button.</li>
+      <li>Select a brewery that interests you.</li>
+      <li>Go enjoy a cold beer!</li>
+    </ul>
+    <p>One of my personal favorites is <a href="http://www.greatrhythmbrewing.com/" target="_blank">Great Rhythm</a>. <br>Check it out if you're in the NH area!</p>
+    <br>
+
+    <!--Need to figure out how to tie to API with action="XX" in form header-->
+    <form method="get">
+        <h3>Location</h3>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city"/><br>
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state"/><br>
+        <br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+    
+    <br>
+    <!--This is where I'll put a map/list view that returns response from above request.-->
+    <br>
+
+
+    <!--Need to figure out how to set up a filter in a map/list view and apply the below request to above.-->
+    <h3>Preferences</h3>
+        <label for="craftbeer">Do you like craft beer?</label>
+        <input type="checkbox" name="craftbeer" id="craftbeer"><br>
+        <label for="ipa">Do you like IPAs?</label>
+        <input type="checkbox" name="ipa" id="ipa"><br>
+        <label for="stout">Do you like stouts?</label>
+        <input type="checkbox" name="stout" id="stout"><br>
+        <label for="sour">Do you like sours?</label>
+        <input type="checkbox" name="sour" id="sour"><br>
+        <br>
+        <input type="submit" value="Filter" class="button">
+    <br>
+
+</body>
+</html>
